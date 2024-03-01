@@ -1,0 +1,12 @@
+5) Write a function that reverses a C string without using the []. It takes in a pointer to the beginning of the array holding the C string.
+
+Function header: void reverse(char* arr)
+   char arr[6] = “hello”;
+   reverse(arr);
+   // now reverse should be “olleh”
+   char arr[5] = “ucla”;
+   reverse(arr);
+   // now reverse should be “alcu”
+   char arr[6] = “kayak”;
+   reverse(arr);
+   // now reverse should be “kayak”

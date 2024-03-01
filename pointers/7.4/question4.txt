@@ -1,0 +1,11 @@
+This question covers edge cases to consider in processing C Strings.
+
+4) Consider the following function that loops through the characters of a C-string and prints them one by one. What are some possible inputs to the function that could break it?
+
+void printChars(const char* str) {
+    int i = 0;
+    while (*(str + i) != '\0') {
+        cout << *(str + i) << endl;
+        i++;
+    }
+}

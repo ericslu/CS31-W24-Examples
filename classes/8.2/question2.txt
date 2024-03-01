@@ -1,0 +1,8 @@
+2. Write a class Person that has two private data members: 
+• m_age(an int)
+• m_nickname(a string).
+
+The Person class should have a default constructor that initializes its member variables to reasonable values and a second constructor that initializes the member variables to the values of its parameters. In addition, Person should have three public member functions:
+• getAge(), which returns the Person’s age
+• haveBirthday(), which increments the Person’s age by 1 
+• speak(), which prints the Person’s nickname.
