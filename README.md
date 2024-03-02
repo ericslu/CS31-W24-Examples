@@ -11,6 +11,8 @@ Topics Covered
     - Else If
     - Else
 - Pointers
+    - References
+    - C-Strings
     - C-String Edge Cases
     - Array Accessing with Pointers
     - Pointer Arithmetic
