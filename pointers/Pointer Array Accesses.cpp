@@ -5,13 +5,14 @@ using namespace std;
 int main() {
     // Array Pointers (this is not a term people use)
     char test[] = "hello";
-    cout << *test << endl;
+    // cout << *test << endl;
     
     char* temp = test;
     cout << *temp << endl;
     
     // Iterating through arrays with pointers
     test += 1;
+    cout << *(test) << endl;
     
     char* temp2 = test + 1;
     cout << *temp2 << endl;

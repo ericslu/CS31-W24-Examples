@@ -13,7 +13,8 @@ void printChars(const char* str) {
 }
 
 int main() {
-    //printChars();
+    char valid_input[] = "example";
+    printChars(valid_input);
     /*
     There are 3 Error Cases:
     - Case A: Uninitialized Pointer

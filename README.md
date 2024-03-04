@@ -14,7 +14,7 @@ Topics Covered
     - References
     - C-Strings
     - C-String Edge Cases
-    - Array Accessing with Pointers
+    - Storing and Accessing Arrays using Pointers
     - Pointer Arithmetic
 - Classes
     - Constructors

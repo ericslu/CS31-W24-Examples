@@ -20,8 +20,8 @@ void reverse(char *arr)
         // Store the current "begin" char
         int temp = *start;
         // Store the current "end" in the current "begin"
-        start = *end;
-        end = temp;
+        *start = *end;
+        *end = temp;
         end--;
         start++;
     }
