@@ -5,6 +5,8 @@ Programs are written to better visualize Introductory Programming concepts in C+
 
 Originally written in Online C++ compilers, but moved to GitHub for better accessibility.
 
+NOTE: This repository is not a comprehensive overview of CS 31 and is not meant to be used as an in-depth study guide.
+
 Topics Covered
 - If Statements
     - If
