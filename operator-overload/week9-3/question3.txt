@@ -1,0 +1,28 @@
+3. Define and implement the following operators so that the following pile of driver code will build, run and pass the various assert statements supplied below:
+bankAccount operator + ( const bankAccount & left, const bankAccount & right );
+bankAccount operator - ( const bankAccount & left, const bankAccount & right );
+bool operator == ( const bankAccount left, const bankAccount & right );
+std::ostream& operator << ( std::ostream& outs, const bankAccount & b );
+std::istream& operator >> ( std::istream& ins, bankAccount & b );
+
+Example:
+    bankAccount me( "Howard", 100.00 );
+    bankAccount another( "Howard", 50.00 );
+    bankAccount you( "You", 100.00 );
+    
+    bankAccount combined = me + another;
+    if (me == you)
+    {
+       assert( false );
+    }
+    if (me == me)
+    {
+        assert( true );
+    }
+    
+    bankAccount less = me - another;
+    assert( less.getName() == "Howard" );
+    assert( less.getBalance() == 50.00 );
+    
+    cin >> combined;
+    cout << combined;

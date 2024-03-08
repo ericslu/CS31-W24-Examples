@@ -1,0 +1,21 @@
+const **WHEN DECLARED AFTER FUNCTION DEFINITION** will throw a compiler error if any member variables are changed.
+
+const **WHEN DECLARED BEFORE FUNCTION DEFINITION** denotes that the function's output cannot be changed.
+
+Ex:
+int getAge() const {}       ->  getAge() function cannot change any member variables
+const int getAge() {}       ->  output of getAge() is const variable (seems useless, but can be helpful for pointers and references)
+
+
+Another note:
+Const functions are different functions than non-const functions.
+For instance, consider the following class:
+
+class Bruin() {
+    public:
+        void func() const;
+}
+
+Bruin::func() {
+    // This code will result in a compiler error (The program will not even run) as C++ will look for a definition of func() without a const in the Bruin class, but will be unable to find one.
+}

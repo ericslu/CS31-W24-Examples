@@ -1,0 +1,12 @@
+NOTE: If you search online for articles on Overloading Operators in C++, you will discover that there are many approaches to overloading an Operator in C++. Some approaches have 1 parameter in the operator overload function, while so far from what I have seen in this course (Discussion Slides and Lectures), Professor Stahl has covered the alternative approach with 2 parameters in the operator overload function. 
+
+The following articles will focus on Operator Overloads using 2 parameters.
+
++ Operator Overload: https://www.geeksforgeeks.org/types-of-operator-overloading-in-cpp/
+<< and >> Overload: https://www.geeksforgeeks.org/overloading-stream-insertion-operators-c/
+Friend Functions: https://www.geeksforgeeks.org/friend-class-function-cpp/
+
+
+StackOverflow Articles I used (you can ignore them if they're too confusing):
+https://stackoverflow.com/questions/6255825/what-operators-should-be-declared-as-friends
+https://stackoverflow.com/questions/15441633/number-of-arguments-in-operator-overload-in-c
