@@ -15,11 +15,17 @@ Topics Covered
 - Pointers
     - References
     - C-Strings
-    - C-String Edge Cases
+    - C-String Edge Cases (WS 7, #4)
     - Storing and Accessing Arrays using Pointers
     - Pointer Arithmetic
 - Classes
     - Constructors
-    - Member Variables and Objects
+    - Member Variables and Objects (WS 8, #2)
     - const keyword
-- Operator Overloading
+- Operator Overloading (WS 9, #3)
+- Week 10 Discussion
+    - Initializer Lists
+    - Friend Functions
+    - Dangling Pointers
+    - Default Constructors
+    - General Notation

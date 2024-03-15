@@ -1,0 +1,112 @@
+General Notes (mostly covered in slides):
+
+        LA Feedback:            tinyurl.com/LA-Feedback-W24
+        
+        LAs (Disc 2A): Brenna Kjorness, Eric Lu
+
+        Discussion Code Demos:  tinyurl.com/EricCS31W24
+
+
+General Tips:
+- Dont forget your semicolons!
+    - After class definitions
+    - After function calls, creating variables
+
+- Read the questions carefully
+
+- Make programs which WORK, not programs that maximize efficiency work
+
+
+
+
+
+Accessing member variables:
+ - Pointers use -> notation
+ - "Objects" use . notation
+ 
+ Ex:
+ // Assume a class Howard exists, with a member string lastName (public for example conveniency)
+class Howard() {
+    public:
+        string lastName;
+};
+ 
+int main() {
+    Howard obj = Howard();
+    Howard* ptr = new Howard();
+    
+    // To access member lastName:
+    obj.lastName        // obj exists, so we use period
+    ptr->lastName       // ptr is a pointer, so we use arrow
+} 
+ 
+ 
+ 
+ 
+ 
+Friend Functions:
+- Functions defined with friend are allowed to access private member variables/functions
+- Must be public
+- Friend should only defined once in the class (ex below)
+
+class Fish {
+    friend bool operator < ( const Noise& left, const Noise& right );
+};
+
+// < is not redefined as friend outside of the class (it is already defined friend IN the class)
+bool operator < ( const Noise& left, const Noise& right ) {
+    ...
+}
+
+
+// NOTE: You do not need to use the Object:: notation for defining class operators outside of the class
+// The following will not compile:
+bool Fish::operator < ( const Noise& left, const Noise& right ) {
+    ...
+}
+
+
+
+
+
+
+Pointers...
+- Pointers store ********ADDRESSES********
+
+    int x = 3;      // This stores a value
+    
+    // &x refers to the ADDRESS which the VALUE x is stored in
+    // xptr is an integer pointer which stored the ADDRESS x is stored in
+    // Note: Pointers cannot store VALUES, Pointers can only store ADDRESSES
+    int* xptr = &x;   
+    
+    // If we place the star operator in front of a pointer, we DEREFERENCE
+    // Dereferencing means that we will extract the VALUE stored within a pointer 
+    // (Assuming it is correctly defined)
+    cout << *xptr << endl;
+
+
+
+Edge Cases to Pointers:
+- nullptr // (pointer which explicitly stored nothing (therefore you cant dereference it))
+- uninitialized pointers    // Uninitialized pointers store "garbage" values and cannot be dereferenced
+    - Ex: int* a;
+
+
+
+
+
+
+ Constructor Jargon:
+ - C++ will define a "default constructor" if a class constructor is not defined
+ - NOTE: The Default Constructor will not be create if ANY constructor is defined
+
+// Suppose I have defined a class TA previously in this code:
+class HainesHallA2 {
+    public:
+        // No constructor defined here, therefore a default constructor will be made
+    private:
+        int numberOfConfusingHallways;  
+        string roomNumber;              
+        TA Adrian;                   
+};
